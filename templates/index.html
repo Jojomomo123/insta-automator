@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Open Instagram</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function openInstagram() {
-            $.ajax({
-                url: "/automate-instagram",
-                method: "GET",
-                success: function(response) {
-                    console.log("Automation successful!");
-                },
-                error: function(xhr, status, error) {
-                    console.log("Automation failed: " + error);
-                }
-            });
-        }
-    </script>
+    <title>Flask HTML Connection</title>
 </head>
 <body>
-    <button onclick="openInstagram()">Open Instagram and Automate</button>
+    <h1>Welcome to Flask HTML Connection!</h1>
+    <p>This is a sample HTML page connected to Flask.</p>
 </body>
 </html>
