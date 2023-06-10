@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Instagram</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function openInstagram() {
+            $.ajax({
+                url: "/automate-instagram",
+                method: "GET",
+                success: function(response) {
+                    console.log("Automation successful!");
+                },
+                error: function(xhr, status, error) {
+                    console.log("Automation failed: " + error);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openInstagram()">Open Instagram and Automate</button>
+</body>
+</html>
